@@ -2,6 +2,8 @@ package com.rodrigo.loja.config.init;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import com.rodrigo.loja.config.WebConfig;
+
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
@@ -13,7 +15,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class<?>[] {WebConfig.class};
 	}
 
 	@Override
